@@ -112,3 +112,18 @@ smaller binaries as well.
 
 Have fun!
 
+## Shubham's wsl steps
+
+```bash
+# Clean all projects
+dotnet clean
+rm -rf bin/ obj/
+
+# Rebuild with proper settings
+dotnet publish -c Release \
+  -p:PublishSingleFile=true \
+  -p:DebugType=None \
+  -p:DebugSymbols=false \
+  -r linux-x64 \
+  --self-contained true
+```
