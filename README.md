@@ -127,3 +127,9 @@ dotnet publish -c Release \
   -r linux-x64 \
   --self-contained true
 ```
+
+## Where is the binary 
+
+It's in `src/fflat/bin/Release/net9.0/linux-x64/publish/`
+
+It appears after the build
